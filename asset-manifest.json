@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ClassManagement-client/static/css/main.2ed25ced.chunk.css",
+    "main.js": "/ClassManagement-client/static/js/main.eb4181fe.chunk.js",
+    "main.js.map": "/ClassManagement-client/static/js/main.eb4181fe.chunk.js.map",
+    "runtime-main.js": "/ClassManagement-client/static/js/runtime-main.49ba63e6.js",
+    "runtime-main.js.map": "/ClassManagement-client/static/js/runtime-main.49ba63e6.js.map",
+    "static/css/2.c1256375.chunk.css": "/ClassManagement-client/static/css/2.c1256375.chunk.css",
+    "static/js/2.89ce0f57.chunk.js": "/ClassManagement-client/static/js/2.89ce0f57.chunk.js",
+    "static/js/2.89ce0f57.chunk.js.map": "/ClassManagement-client/static/js/2.89ce0f57.chunk.js.map",
+    "static/js/3.3e03fb2d.chunk.js": "/ClassManagement-client/static/js/3.3e03fb2d.chunk.js",
+    "static/js/3.3e03fb2d.chunk.js.map": "/ClassManagement-client/static/js/3.3e03fb2d.chunk.js.map",
+    "index.html": "/ClassManagement-client/index.html",
+    "static/css/2.c1256375.chunk.css.map": "/ClassManagement-client/static/css/2.c1256375.chunk.css.map",
+    "static/css/main.2ed25ced.chunk.css.map": "/ClassManagement-client/static/css/main.2ed25ced.chunk.css.map",
+    "static/js/2.89ce0f57.chunk.js.LICENSE.txt": "/ClassManagement-client/static/js/2.89ce0f57.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49ba63e6.js",
+    "static/css/2.c1256375.chunk.css",
+    "static/js/2.89ce0f57.chunk.js",
+    "static/css/main.2ed25ced.chunk.css",
+    "static/js/main.eb4181fe.chunk.js"
+  ]
+}
