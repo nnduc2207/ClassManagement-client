@@ -1,17 +1,35 @@
 import { Route } from "react-router"
 
 function DecisionRoute({
-    trueComponent,
-    falseComponent,
+    path,
+    falsePath,
+    TrueComponent,
+    FalseComponent,
     decision,
+    trueProps,
+    falseProps,
     ...rest
 }) {
-    return (
-        <Route
-            {...rest}
-            component={decision ? trueComponent : falseComponent}
-        />
-    )
+    const render = () => {
+        if (decision) {
+            return (
+                <Route
+                    path={path}
+                    render={() => <TrueComponent {...trueProps} />}
+                    {...rest}
+                />
+            )
+        }
+        return (
+            <Route
+                path={falsePath}
+                render={() => <FalseComponent {...falseProps} />}
+                {...rest}
+            />
+        )
+    }
+
+    return render()
 }
 
 export default DecisionRoute
