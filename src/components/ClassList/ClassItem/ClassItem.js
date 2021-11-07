@@ -41,7 +41,7 @@ export default function ClassItem({ classroom }) {
             }
         }
         getClassInfo()
-    }, [])
+    }, [classroom.classId])
 
     const inviteClickHandle = async () => {
         setShow(true)
@@ -50,7 +50,7 @@ export default function ClassItem({ classroom }) {
                 `/class/${classroom.classId}/invitedtoken`
         )
         const token = await response.json()
-        navigator.clipboard.writeText(token || '')
+        navigator.clipboard.writeText(token || "")
         setTimeout(() => {
             setShow(false)
         }, 1000)

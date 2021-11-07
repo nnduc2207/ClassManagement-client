@@ -5,7 +5,7 @@ export default function ClassList({ classes }) {
     return (
         <ListGroup variant="flush">
             {classes.map((e) => (
-                <ListGroup.Item>
+                <ListGroup.Item key={e.classId}>
                     <ClassItem classroom={e} />
                 </ListGroup.Item>
             ))}

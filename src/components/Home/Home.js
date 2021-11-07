@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useEffect } from "react"
-import { Col, Container, Row, Card, Button, Spinner } from "react-bootstrap"
+import { Col, Container, Row, Card, Spinner } from "react-bootstrap"
 import ClassList from "../ClassList/ClassList"
 
 export default function Home({ user }) {
@@ -17,7 +17,7 @@ export default function Home({ user }) {
             }
         }
         getClasses()
-    },[])
+    },[user.id])
     return (
         <div className="Home">
             <Container fluid>
@@ -26,7 +26,7 @@ export default function Home({ user }) {
                         <Card>
                             <Card.Header as="h5">Class</Card.Header>
                             <Card.Body>
-                                {classes ? <ClassList classes={classes} /> : <Spinner class="align-middle" animation="grow" />}
+                                {classes ? <ClassList classes={classes} /> : <Spinner className="align-middle" animation="grow" />}
                             </Card.Body>
                         </Card>
                     </Col>

@@ -21,7 +21,7 @@ function Login(props) {
         if (props.location.state?.errorMsg) {
             setError(props.location.state?.errorMsg.toString())
         }
-    }, [props.location.state?.errorMsg])
+    }, [props.location.state?.errorMsg, token, history])
     
     const loginHandle = async (email, password) => {
         try {
